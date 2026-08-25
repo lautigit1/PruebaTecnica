@@ -102,7 +102,7 @@ tests/
 
 1. **Clonar el repositorio o situarse en el directorio:**
    ```bash
-   cd pruebatec
+   cd PruebaTecnica
    ```
 
 2. **Instalar dependencias:**
