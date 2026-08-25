@@ -1,0 +1,56 @@
+[
+  {
+    "id": "e4b1a8d0-6f29-4b9e-9d2a-1c8f4e7b3a01",
+    "name": "Juan Pérez",
+    "email": "juan.perez@empresa.com",
+    "phone": "+54 11 4521-8890",
+    "department": "Desarrollo"
+  },
+  {
+    "id": "f5c2b9e1-7a30-4c0f-ae3b-2d9a5f8c4b12",
+    "name": "María González",
+    "email": "maria.gonzalez@empresa.com",
+    "phone": "+54 11 5567-1234",
+    "department": "Ventas"
+  },
+  {
+    "id": "a1d3c0f2-8b41-4d1a-bf4c-3e0b6a9d5c23",
+    "name": "Carlos Rodríguez",
+    "email": "carlos.rodriguez@empresa.com",
+    "phone": "+54 11 6789-0123",
+    "department": "Marketing"
+  },
+  {
+    "id": "b2e4d1a3-9c52-4e2b-a05d-4f1c7b0e6d34",
+    "name": "Ana Martínez",
+    "email": "ana.martinez@empresa.com",
+    "phone": "+54 11 3456-7890",
+    "department": "Soporte"
+  },
+  {
+    "id": "c3f5e2b4-0d63-4f3c-b16e-5a2d8c1f7e45",
+    "name": "Lucas Silva",
+    "email": "lucas.silva@empresa.com",
+    "phone": "+54 11 2345-6789",
+    "department": "Desarrollo"
+  },
+  {
+    "id": "d4a6f3c5-1e74-4a4d-c27f-6b3e9d2a8f56",
+    "name": "Lucía Fernández",
+    "email": "lucia.fernandez@empresa.com",
+    "department": "Marketing"
+  },
+  {
+    "id": "e5b7a4d6-2f85-4b5e-d38a-7c4f0e3b9a67",
+    "name": "Martín Gómez",
+    "email": "martin.gomez@empresa.com",
+    "phone": "+54 11 7890-1234",
+    "department": "Ventas"
+  },
+  {
+    "id": "f6c8b5e7-3a96-4c6f-e49b-8d5a1f4c0b78",
+    "name": "Sofía López",
+    "email": "sofia.lopez@empresa.com",
+    "department": "Soporte"
+  }
+]

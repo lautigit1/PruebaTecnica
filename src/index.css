@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Smooth transitions and accessibility motion respect */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Row entrance: subtle rise + fade, staggered per-row via inline animation-delay */
+@keyframes rowIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-row-in {
+  animation: rowIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+/* Skeleton shimmer: a soft light sweep instead of a flat pulse */
+@keyframes shimmer {
+  from {
+    background-position: -320px 0;
+  }
+  to {
+    background-position: 320px 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, #efede8 25%, #f5f3ee 37%, #efede8 63%);
+  background-size: 640px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+/* New row pulse highlight */
+@keyframes highlightRow {
+  0% {
+    background-color: #eaf1ef;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.animate-highlight {
+  animation: highlightRow 2.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Toast slide-up animation */
+@keyframes toastSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-toast {
+  animation: toastSlideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-row-in,
+  .animate-shimmer,
+  .animate-highlight,
+  .animate-toast {
+    animation: none;
+  }
+}
